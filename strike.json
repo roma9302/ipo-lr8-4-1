@@ -1,0 +1,38 @@
+
+[
+  {
+    "id": 1,
+    "name": "Мустанг",
+    "manufacturer": "МТЗ",
+    "is_petrol": true,
+    "tank_volume": 45
+  },
+  {
+    "id": 2,
+    "name": "Лада Веста",
+    "manufacturer": "АвтоВАЗ",
+    "is_petrol": true,
+    "tank_volume": 50
+  },
+  {
+    "id": 3,
+    "name": "Тойота Камри",
+    "manufacturer": "Toyota",
+    "is_petrol": true,
+    "tank_volume": 65
+  },
+  {
+    "id": 4,
+    "name": "Фольксваген Пассат",
+    "manufacturer": "Volkswagen",
+    "is_petrol": true,
+    "tank_volume": 66
+  },
+  {
+    "id": 5,
+    "name": "Хонда Цивик",
+    "manufacturer": "Honda",
+    "is_petrol": true,
+    "tank_volume": 47
+  }
+]
