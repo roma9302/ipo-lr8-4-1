@@ -11,6 +11,10 @@ counter=0
 close = True
 
 
+def error(er):
+    print("Возникла ошибка." + " " + er)
+ 
+
 #меню программы
 def menu():
     print("""
@@ -56,7 +60,7 @@ def out_index():
             """)
             break  
     else:
-        print('Машина не найдена')
+        error("Машина не найдена")
 
         index += 1
     counter += 1
@@ -74,7 +78,7 @@ def input_new():
             break
     
     if exists:
-        print("Ошибка: машина с таким номером уже существует.")
+        error("Машина с таким номером уже существует.")
     else:
         name = input("Введите имя машины: ")  
         manufacturer = input("Введите завод изготовитель: ")  
@@ -112,7 +116,7 @@ def del_id():
                 json.dump(car_data, output_file, ensure_ascii=False, indent=2)
                 print("Машина успешно удалена.")
         else:
-              print("Запись не найдена.")
+              error("Запись не найдена.")
         counter += 1
 
 
@@ -150,6 +154,6 @@ def main():
         elif point == 5:
             leave()
         else:
-            print("Некорректный ввод. Пожалуйста, выберите номер от 1 до 5.")
+            error("Некорректный ввод. Пожалуйста, выберите номер от 1 до 5.")
 
 main()
