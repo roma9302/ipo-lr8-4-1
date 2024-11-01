@@ -10,7 +10,7 @@ with open("strike.json", 'r', encoding='utf-8') as file:
 counter=0
 close = True
 
-
+#Вывод ошибок
 def error(er):
     print("Возникла ошибка." + " " + er)
  
