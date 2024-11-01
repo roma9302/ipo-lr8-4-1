@@ -2,7 +2,7 @@ import json
 
 
 # Загрузка данных из файла
-with open("C:\\Users\\user\\учеба\\IPO\\lb8\\strike.json", 'r', encoding='utf-8') as file: 
+with open("strike.json", 'r', encoding='utf-8') as file: 
     car_data = json.load(file) 
 
 
